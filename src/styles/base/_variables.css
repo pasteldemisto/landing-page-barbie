@@ -1,0 +1,42 @@
+:root {
+
+   --container-width: 1240px;
+
+   /* Cores de Fundo */
+   --color-bg-main: #F2EAD3;
+   --color-bg-secondary: #DFD7BF;
+   --color-bg-dark: #3F2305;
+
+   /* Cores de Texto */
+   --color-text-primary: #3F2305;
+   --color-text-secondary: #333333;
+   --color-text-light: #F2F2F2;
+
+   /* Cores Auxiliares */
+   --color-neutral: #A4907C;
+
+   --radius-sm: 0.5rem;
+   --radius-md: 1rem;
+   --radius-pill: 50px;
+   --radius-circle: 50%;
+
+   --spacing-xs: 0.5rem;
+   --spacing-sm: 1rem;
+   --spacing-md: 2rem;
+   --spacing-lg: 4rem;
+
+   --font-family-primary: 'League Spartan', sans-serif;
+
+   /* Tamanhos */
+   --font-size-md: 1.5rem;
+   --font-size-lg: 2.25rem;
+   --font-size-xl: 3rem;
+
+   --font-weight-regular: 400;
+   --font-weight-bold: 700;
+
+   /* Altura das linhas (Line Height multiplicador) */
+   --line-height-md: 1.125;
+   --line-height-lg: 1.11;
+   --line-height-xl: 1.14;
+}

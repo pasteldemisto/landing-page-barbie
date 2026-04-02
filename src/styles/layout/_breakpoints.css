@@ -1,0 +1,22 @@
+:root {
+  --container-padding: 15px;
+  --section-padding: var(--spacing-md);
+  --display-button-header: flex;
+  --display-menu-desktop: none;
+}
+
+@media (min-width: 744px) {
+  :root {
+    --container-padding: 30px;
+    --section-padding: var(--spacing-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-width: 1240px; 
+    --container-padding: 0;
+    --display-button-header: none;
+    --display-menu-desktop: flex;
+  }
+}
