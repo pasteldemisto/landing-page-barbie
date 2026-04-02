@@ -1,4 +1,4 @@
-# Barbie (2023) — Landing Page | Playcube
+# Barbie (2023) Landing Page | Playcube
 
 Página de detalhes do filme **Barbie (2023)** desenvolvida como parte da plataforma fictícia **Playcube**. O projeto apresenta informações do filme, carrossel de elenco e resenhas de usuários, com foco em semântica, acessibilidade e organização modular do CSS.
 
