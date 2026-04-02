@@ -1,0 +1,155 @@
+.movie-hero {
+  padding: var(--spacing-lg) 0;
+  background-color: var(--color-bg-main);
+}
+
+.movie-hero__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: 0 15px;
+}
+
+.movie-hero__poster {
+  width: 100%;
+  /* Medida exata do XD mobile: 346px */
+  max-width: 346px;
+  height: 519px;
+  border: none;
+}
+
+.movie-hero__poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========== INFORMAÇÕES E TEXTOS =========== */
+.movie-hero__info {
+  width: 100%;
+  font-size: var(--font-size-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+#movie-title {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-primary);
+}
+
+.movie-year {
+  color: var(--color-neutral);
+  font-weight: var(--font-weight-regular);
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.detail-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-group dt {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.detail-group dd {
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+/* =========== ADAPTAÇÕES PARA TELAS MAIORES (Media Queries) =========== */
+
+/* Tablet (A partir de 744px) */
+@media (min-width: 744px) {
+  .movie-hero {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+}
+
+/* Desktop (A partir de 1920px ou telas grandes convencionais como 1024px) */
+@media (min-width: 1024px) {
+  .movie-hero__container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-lg);
+  }
+
+  .movie-hero__poster {
+    flex: 0 0 450px;
+  }
+
+  .movie-hero__info {
+    flex: 1;
+  }
+
+  #movie-title {
+    text-align: left;
+  }
+
+  .movie-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  .detail-group--full {
+    grid-column: 1 / -1;
+  }
+}
+
+/* =========== ADAPTAÇÕES (Desktop 1920px / Grid 1240px) =========== */
+
+@media (min-width: 1024px) {
+  .movie-hero {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .movie-hero__container {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 60px;
+    padding: 0;
+  }
+
+  .movie-hero__poster {
+    flex: 0 0 400px;
+    max-width: 400px;
+    height: 600px;
+  }
+
+  .movie-hero__info {
+    flex: 1;
+    padding-top: 5px;
+  }
+
+  #movie-title {
+    text-align: left;
+    font-size: 48px;
+  }
+
+  .movie-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  .detail-group--full {
+    grid-column: 1 / -1;
+  }
+}

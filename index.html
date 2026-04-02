@@ -1,13 +1,239 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>barbie-landing</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Conheça tudo sobre o filme Barbie (2023). Sinopse, elenco, bilheteria e muito mais no Playcube.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+
+  <script type="module" src="/src/main.js" defer></script>
+  <title>Barbie (2023) | Playcube</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <a href="/" class="header__logo" aria-label="Página inicial do Playcube">
+        <img src="/images/logo.png" alt="Logo Playcube" />
+      </a>
+
+      <nav class="header__nav" aria-label="Navegação principal">
+        <button class="header__menu-btn" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+
+        <ul id="main-menu" class="header__menu-list">
+          <li><a href="#filmes">Filmes</a></li>
+          <li><a href="#series">Séries</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="movie-hero" aria-labelledby="movie-title">
+      <div class="movie-hero__container">
+
+        <div class="movie-hero__poster">
+          <img src="/images/capa.png"
+            alt="Pôster oficial do filme Barbie com Margot Robbie e Ryan Gosling no carro rosa" />
+        </div>
+
+        <div class="movie-hero__info">
+          <h1 id="movie-title">Barbie <span class="movie-year">(2023)</span></h1>
+
+          <dl class="movie-details">
+            <div class="detail-group">
+              <dt>Gênero:</dt>
+              <dd>Comédia, Aventura, Fantasia</dd>
+            </div>
+
+            <div class="detail-group detail-group--full">
+              <dt>Sinopse:</dt>
+              <dd>No mundo mágico das Barbies, "Barbieland", uma das bonecas começa a perceber que não se encaixa como
+                as outras. Depois de ser expulsa, ela parte para uma aventura no "mundo real", onde descobre que a
+                beleza está no interior de cada um.</dd>
+            </div>
+
+            <div class="detail-group">
+              <dt>Dirigido por:</dt>
+              <dd>Greta Gerwig</dd>
+            </div>
+
+            <div class="detail-group">
+              <dt>Escrito por:</dt>
+              <dd>Greta Gerwig, Noah Baumbach</dd>
+            </div>
+
+            <div class="detail-group">
+              <dt>Situação:</dt>
+              <dd>Lançado</dd>
+            </div>
+
+            <div class="detail-group">
+              <dt>Idioma original:</dt>
+              <dd>Inglês</dd>
+            </div>
+
+            <div class="detail-group">
+              <dt>Orçamento:</dt>
+              <dd>$145,000,000.00</dd>
+            </div>
+
+            <div class="detail-group">
+              <dt>Receita:</dt>
+              <dd>$1,280,313,193.00</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="cast" aria-labelledby="cast-title">
+      <div class="cast__container">
+        <div class="cast__header">
+          <h2 id="cast-title">Elenco</h2>
+          <a href="#todos-elenco" class="btn-ver-mais">Ver mais</a>
+        </div>
+
+        <div class="swiper cast__carousel">
+          <div class="swiper-wrapper">
+
+            <article class="swiper-slide cast-card">
+              <img src="/images/1.png" alt="Foto da atriz Margot Robbie" class="cast-card__img" />
+              <h3 class="cast-card__name">Margot Robbie</h3>
+              <p class="cast-card__role">Barbie</p>
+            </article>
+
+            <article class="swiper-slide cast-card">
+              <img src="/images/2.png" alt="Foto do ator Ryan Gosling" class="cast-card__img" />
+              <h3 class="cast-card__name">Ryan Gosling</h3>
+              <p class="cast-card__role">Ken</p>
+            </article>
+
+            <article class="swiper-slide cast-card">
+              <img src="/images/3.png" alt="Foto da atriz America Ferrera" class="cast-card__img" />
+              <h3 class="cast-card__name">America Ferrera</h3>
+              <p class="cast-card__role">Gloria</p>
+            </article>
+
+            <article class="swiper-slide cast-card">
+              <img src="/images/4.png" alt="Foto da atriz Kate McKinnon" class="cast-card__img" />
+              <h3 class="cast-card__name">Kate McKinnon</h3>
+              <p class="cast-card__role">Barbie</p>
+            </article>
+
+            <article class="swiper-slide cast-card">
+              <img src="/images/5.png" alt="Foto da atriz Ariana Greenblatt" class="cast-card__img" />
+              <h3 class="cast-card__name">Ariana Greenblatt</h3>
+              <p class="cast-card__role">Sasha</p>
+            </article>
+
+            <article class="swiper-slide cast-card">
+              <img src="/images/6.png" alt="Foto do ator Michael Cera" class="cast-card__img" />
+              <h3 class="cast-card__name">Michael Cera</h3>
+              <p class="cast-card__role">Allan</p>
+            </article>
+
+            <article class="swiper-slide cast-card">
+              <img src="/images/7.png" alt="Foto do ator/atriz 7" class="cast-card__img" />
+              <h3 class="cast-card__name">Will Ferrell</h3>
+              <p class="cast-card__role">CEO da Mattel</p>
+            </article>
+
+            <article class="swiper-slide cast-card">
+              <img src="/images/8.png" alt="Foto do ator/atriz 8" class="cast-card__img" />
+              <h3 class="cast-card__name">Issa Rae</h3>
+              <p class="cast-card__role">Barbie</p>
+            </article>
+
+            <article class="swiper-slide cast-card">
+              <img src="/images/9.png" alt="Foto do ator/atriz 9" class="cast-card__img" />
+              <h3 class="cast-card__name">Alexandra Shipp</h3>
+              <p class="cast-card__role">Barbie Autora</p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" aria-labelledby="reviews-title">
+      <div class="reviews__container">
+        <div class="reviews__header">
+          <h2 id="reviews-title">Resenhas</h2>
+          <a href="#todas-resenhas" class="btn-ver-mais">Ver mais</a>
+        </div>
+        <div class="reviews__grid">
+          <article class="review-card">
+            <div class="review-card__content">
+              <p>Um filme super divertido, muito engraçado e reflexivo acerca da vida e da nossa sociedade. Em sua
+                grande maioria, apresenta críticas pontuais, bem escritas e muito inteligentes, porém, há momentos em
+                que essas críticas se tornam repetitivas, o que foi um pequeno e praticamente único problema para mim.
+                De resto, é tudo perfeito, as atuações estão impecáveis, Ryan Gosling e Margot Robbie estão incríveis, a
+                direção de Greta Gerwig também é ótima. É um filme que acert...</p>
+            </div>
+            <div class="review-card__footer">
+              <p class="review-card__author">por <strong>Hementon Renner</strong></p>
+              <div class="review-card__meta">
+                <time datetime="2023-07-21">21 de julho de 2023</time>
+                <span class="review-card__rating">Nota: <strong>9</strong>/10</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-card__content">
+              <p>Título: Uma Celebração Encantadora e Empoderadora - "Barbie" (2023)</p>
+              <br>
+              <p>"Barbie" é uma adorável surpresa cinematográfica que honra o icônico ícone cultural que é a boneca
+                Barbie. Sob a brilhante interpretação de Margot Robbie, o filme é um verdadeiro deleite, repleto de
+                charme, humor e vulnerabilidade, o que torna Robbie uma escolha perfeita para dar vida à amada boneca...
+              </p>
+            </div>
+            <div class="review-card__footer">
+              <p class="review-card__author">por <strong>Achilles</strong></p>
+              <div class="review-card__meta">
+                <time datetime="2023-07-26">26 de julho de 2023</time>
+                <span class="review-card__rating">Nota: <strong>10</strong>/10</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <a href="/" aria-label="Página inicial do Playcube">
+          <img src="/images/logo.png" alt="Logo Playcube" class="footer__logo" />
+        </a>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegação do rodapé">
+        <ul class="footer__nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#suporte">Suporte</a></li>
+          <li><a href="#add-filme">Adicione um Filme</a></li>
+          <li><a href="#add-serie">Adicione uma Série</a></li>
+          <li><a href="#discussoes">Discussões</a></li>
+          <li><a href="#termos">Termos de Uso</a></li>
+          <li><a href="#privacidade">Política de Privacidade</a></li>
+          <li><a href="#diretrizes">Diretrizes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
 </html>
