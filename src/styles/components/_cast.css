@@ -1,0 +1,91 @@
+.cast {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-lg) 0;
+}
+
+.cast__container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.cast__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: var(--spacing-md);
+  width: 100%;
+}
+
+#cast-title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.cast__carousel {
+  width: 100%;
+  padding-left: 15px;
+}
+
+.cast__carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6rem;
+  height: 100%;
+  background: linear-gradient(to right, transparent 0%, var(--color-bg-secondary) 100%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.cast-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-xs);
+}
+
+.cast-card__img {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-circle);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: var(--spacing-xs);
+}
+
+.cast-card__name {
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.cast-card__role {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Tablet (A partir de 744px) */
+@media (min-width: 744px) {
+  .cast {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+}
+
+/* Desktop (A partir de 1024px) */
+@media (min-width: 1024px) {
+
+  .cast__header,
+  .cast__carousel {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
