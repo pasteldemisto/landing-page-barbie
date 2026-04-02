@@ -6,7 +6,10 @@ Página de detalhes do filme **Barbie (2023)** desenvolvida como parte da plataf
 
 ## Preview
 
-
+## Desktop
+<img width="1856" height="960" alt="image" src="https://github.com/user-attachments/assets/5ca58789-0dcb-4c1f-80e0-b0afe4409b31" />
+<img width="1857" height="955" alt="image" src="https://github.com/user-attachments/assets/14a8fed8-0b05-42b3-8fb1-315959ffd939" />
+<img width="1858" height="955" alt="image" src="https://github.com/user-attachments/assets/f43e44e3-0b8c-4b3d-b3ca-5b11e844cc14" />
 
 ---
 
